@@ -86,3 +86,25 @@ minetest.register_node('xblocks:button_down_' ..material, {
 	end,
 })
 end
+
+local wood_table = { --name, material, invimg
+{'Acaspen Wood', 'acaspen'},
+{'Acagle Wood', 'acagle'},
+{'Acapine Wood', 'acapine'},
+{'Aspod Wood', 'aspod'},
+{'Junpine Wood', 'junpine'}
+}
+
+for i in ipairs (wood_table) do
+	local name = wood_table[i][1]
+	local material = wood_table[i][2]
+	local invimg = wood_table[i][3]
+	
+minetest.register_node('xblocks:wood_' ..material, {
+	description = name,
+	tiles = {material..'_wood.png'},
+	groups = {choppy=2,oddly_breakable_by_hand=2, furn=1, flammable=1},
+	paramtype = 'light',
+	sounds = default.node_sound_wood_defaults(),
+})
+end
