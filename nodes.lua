@@ -25,7 +25,8 @@ local button_table = { --name, material, invimg
 {'Acacia Button', 'acacia_wood'},
 {'Aspen Button', 'aspen_wood'},
 {'Jungle Button', 'junglewood'},
-{'Pine Button', 'pine_wood'}
+{'Pine Button', 'pine_wood'},
+{"Stone Button", 'stone'}
 }
 
 for i in ipairs (button_table) do
@@ -58,7 +59,8 @@ local button_table = { --name, material, invimg
 {'Acacia Button', 'acacia_wood'},
 {'Aspen Button', 'aspen_wood'},
 {'Jungle Button', 'junglewood'},
-{'Pine Button', 'pine_wood'}
+{'Pine Button', 'pine_wood'},
+{"Stone Button", 'stone'}
 }
 
 for i in ipairs (button_table) do
