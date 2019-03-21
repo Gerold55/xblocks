@@ -40,6 +40,7 @@ minetest.register_node('xblocks:button_up_' ..material, {
 	drawtype = "nodebox",
 	groups = {choppy=2,oddly_breakable_by_hand=2, flammable=1},
 	paramtype = 'light',
+	paramtype2 = 'facedir',
 	sounds = default.node_sound_wood_defaults(),
 	node_box = {
 		type = "fixed",
